@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>DOM Methods</title>  
+    </head>
+    <body>
+        <h1 id="h1"></h1>
+        <p>This is a paragraph</p>
+        <h2 class="t1">This is heading 1</h2>
+        <h2 class="t1"></h2>
+        
+        <script>
+          document.getElementById("h1").innerHTML="This is Dom method of access by id"
+          document.getElementsByTagName("p")[0].style.color="red"
+          document.getElementsByClassName("t1")[1].innerHTML="This is Dom method of access by class name"
+          var firsthead = document.querySelector(".t1")
+          firsthead.style.color="blue"
+            var secondhead = document.querySelectorAll(".t1")
+            console.log(secondhead.length)
+        </script>
+    </body>
+</html>
