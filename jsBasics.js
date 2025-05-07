@@ -35,3 +35,40 @@ var a = 10;
 var b = "10";
 console.log(a == b); //true (loose equality)
 console.log(a === b); //false (strict equality)
+
+/*=============================================*/
+//scope in JS
+var a = 10; //global variable
+function greet() {
+    var b = 20; //local variable
+    console.log(a); //10
+    console.log(b); //20
+    if(true){
+        let count = 4;
+    }
+    //console.log(count); //block scope variable
+}
+greet(); //function call
+console.log(a); //10
+//console.log(b); //ReferenceError: b is not defined 
+
+const pi= 3.14; //constant variable - value cannot be changed 
+//pi = 3.14159; //Error
+
+//var create global variable in function scope
+//let create block scope variable in block scope
+//const create block scope variable in block scope and cannot be changed
+
+
+
+//==============================================*/
+//types of functions in JS
+function greet(){                        //named function
+    console.log("Hello World!"); 
+} 
+greet();   
+( function () {
+    console.log("WELCOME TO JS!"); 
+})(); //immediately invoked function expression (IIFE)
+
+
