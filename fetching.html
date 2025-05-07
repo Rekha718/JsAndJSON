@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            FETCHING DATA FROM FAKE API
+        </title>
+    </head>
+    <body>
+        <ul></ul>
+        <script>
+            let list = "";
+       fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(json => {
+            json.forEach(user => {
+          list += `<li>${user.name}</li>`;
+            })
+          
+          document.querySelector("ul").innerHTML = list;
+      })
+        </script>
+    </body>
+</html>
