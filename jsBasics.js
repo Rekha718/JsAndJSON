@@ -66,9 +66,40 @@ const pi= 3.14; //constant variable - value cannot be changed
 function greet(){                        //named function
     console.log("Hello World!"); 
 } 
-greet();   
+greet();  
+
+
 ( function () {
     console.log("WELCOME TO JS!"); 
 })(); //immediately invoked function expression (IIFE)
+
+
+
+var myfunction = function (){
+    console.log("Here function is assigned to the variable")
+}
+myfunction(); //function expression
+
+
+
+example = () =>{
+    console.log("Arrow function")
+}
+example(); //arrow function
+
+
+
+/*==============================================*/
+//parameters and arguments in functions
+function add(a,b){ //function with parameters
+    return a+b; 
+}
+console.log(add(10,20)); //function call with arguments 
+
+
+
+
+
+
 
 
