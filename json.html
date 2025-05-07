@@ -26,10 +26,19 @@
         "rating": 2.3
 }
     
-]`   /* json string needs to be converted to js object*/ 
+]` 
+let user = {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@example.com"
+}  
 console.log(JSON.parse(companies)); // parse converts json string to js object
 console.log(JSON.parse(companies)[0]); // parse converts json string to js object
 console.log(JSON.parse(companies)[0].name); // parse converts json string to js object
+
+/* converting js string to json string */
+let jsonString = JSON.stringify(user); // stringify converts js object to json string
+console.log(jsonString); // stringify converts js object to json string
         </script>
 
     </body>

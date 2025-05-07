@@ -1,16 +1,23 @@
 <html>
     <head>
-        <title>
-            JSON data fetching example
-        </title>
+        <title>JSON data fetching example</title>
     </head>
-    <boyd>
+    <body>
+        <ul></ul>
         <script>
+            let list = "";
             fetch('companies.json')
                 .then(response => response.json())
                 .then(data => {
+                    data.forEach(user => {
+                        list += `<li>${user.name}</li>`;
+                    });
+                    document.querySelector("ul").innerHTML = list;
+                    
                     console.log(data); 
-                })
+                    console.log(data[0]);
+                    console.log(data[0].name); 
+                });
         </script>
-    </boyd>
+    </body>
 </html>
