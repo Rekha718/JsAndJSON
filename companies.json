@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Google",
+        "number_of_employees": 156500,
+        "ceo": "Sundar Pichai",
+        "rating": 4.9
+    },
+    {
+            "name": "IBM",
+            "number_of_employees": 15650,
+            "ceo": "Arvind Krishna",
+            "rating": 4.2
+    },
+    {
+        "name": "small startup",
+        "number_of_employees": 10,
+        "ceo":null,
+        "rating": 2.3
+}
+    
+]
